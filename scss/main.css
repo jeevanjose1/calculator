@@ -1,0 +1,105 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.calc {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #14274e;
+}
+
+.calc .calculator {
+  min-height: 10rem;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (80px)[4];
+      grid-template-columns: repeat(4, 80px);
+  -ms-grid-rows: minmax(100px, auto) (80px)[5];
+      grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+  background: rgba(8, 15, 37, 0.6);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.calc .calculator button {
+  outline: none;
+  border: none;
+  margin: 0.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  border-radius: 0px;
+  background: linear-gradient(145deg, #152a53, #122346);
+  -webkit-box-shadow: 2px 2px 4px #0e1b36, -2px -2px 4px #13254b;
+          box-shadow: 2px 2px 4px #0e1b36, -2px -2px 4px #13254b;
+  font-size: 1.4rem;
+}
+
+.calc .calculator button:active {
+  -webkit-box-shadow: inset 3px 3px 5px #0e1b36, inset -3px -3px 5px #1a3366;
+          box-shadow: inset 3px 3px 5px #0e1b36, inset -3px -3px 5px #1a3366;
+  -webkit-transform: scale(0.93);
+          transform: scale(0.93);
+}
+
+.calc .calculator .output {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #091327;
+  grid-column: 1/-1;
+  grid-column: 1/-1;
+  padding: 0.7rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.calc .calculator .output .previous {
+  color: #7c7c7c;
+  font-size: 1.2rem;
+}
+
+.calc .calculator .output .current {
+  color: #c2c2c2;
+  font-size: 2rem;
+}
+
+.calc .calculator .spanquals {
+  grid-column: 3/-1;
+}
+
+.calc .calculator .spanac {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ 3;
+}
+/*# sourceMappingURL=main.css.map */
